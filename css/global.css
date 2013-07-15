@@ -1,0 +1,459 @@
+/*
+    http://www.cssstickyfooter.com
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: none repeat scroll 0 0 #F6F6F6;
+}
+
+
+h2, h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:  #777777;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 30px; /* must be same height as the footer */
+    font-family: 'Verdana', sans-serif;
+}
+
+    #site_head{
+        width: 100%;
+        margin: 0 auto;
+        /*border: 2px solid rosybrown;*/
+        height: 230px;
+        background: url("/img/body-bg.jpg") repeat scroll 0 0 transparent;
+        border-bottom: 1px solid #BBBBBB;
+        box-shadow: 0 4px 0 #FFFFFF;
+
+    }
+        #site_title{
+            padding: 50px 0;
+            margin: 0 auto;
+            width: 300px;
+            height: 45px;
+            /*border: 1px solid red;*/
+        }
+
+        #head_menu{
+            width: 978px;
+            /*border: 1px solid black;*/
+            background: url("/img/menu.png") no-repeat scroll center top / 1024px 86px transparent;
+            font-size: 21px;
+            height: 70px;
+            padding-top: 16px;
+            color: #777777;
+            display: block;
+            margin: 0 auto;
+        }
+
+            #head_menu ul{
+                text-align: center;
+                list-style: none outside none;
+                margin: 0 auto;
+                max-width: 978px;
+            }
+
+                #head_menu ul li{
+                    border: 0 none;
+                    font-family: inherit;
+                    font-size: 100%;
+                    font-style: inherit;
+                    font-weight: inherit;
+                    margin: 0;
+                    outline: 0 none;
+                    padding: 0;
+                    vertical-align: baseline;
+                    display: inline;
+                    position: relative;
+
+                }
+
+                    #head_menu ul li a{
+                        border: 1px solid transparent;
+                        color: #777777;
+                        display: inline-block;
+                        font-size: 21px;
+                        height: 30px;
+                        padding: 4px 15px 0;
+                        text-shadow: 0 1px 0 #F2F2F2;
+                        text-decoration: none;
+                    }
+                        #head_menu ul li a:hover{
+                             background-color: #e0e4f8;
+                             border: 1px solid #AAAAAA;
+                             border-radius: 17px 17px 17px 17px;
+                             box-shadow: 0 1px 0 #F5F5F5, 0 2px 3px #E6E6E6 inset;
+                        }
+
+                            #head_menu ul li a.current_item{
+                                background-color: #FFFFFF;
+                                border: 1px solid #AAAAAA;
+                                border-radius: 17px 17px 17px 17px;
+                                box-shadow: 0 1px 0 #F5F5F5, 0 2px 3px #E6E6E6 inset;
+                            }
+
+    #page_content{
+        width: 980px;
+        margin: 0 auto;
+        /*border: 2px solid yellow;*/
+    }
+        #page_content form{
+            text-align: center;
+            margin: 20px 0;
+        }
+            #page_content form span{
+                font-size: 16pt;
+                color: #777777;
+            }
+
+            #page_content input[name="search"]{
+                background-position: right 10px;
+                border-radius: 20px 20px 20px 20px;
+                color: #000000;
+                height: 40px;
+                padding: 0 35px 0 15px;
+                width: 300px;
+                font-size: 16pt;
+                box-shadow: 0 1px 3px #F2F2F2 inset, 0 1px 0 #FFFFFF;
+                border: 1px solid #CCCCCC !important;
+            }
+
+            #page_content input[type="submit"]{
+                border: 1px solid #3f3f3f;
+                border-radius: 20px 20px 20px 20px;
+                background-color: #498ccd;
+                color: #FFFFFF;
+                padding: 3px 10px 3px 10px;
+                font-size: 16pt;
+                text-shadow: 0 1px 0 #3f3f3f;
+            }
+
+            #page_content input[type="submit"]:hover{
+                cursor: pointer;
+            }
+
+            #page_content form span.s_options{
+                font-size: 11pt;
+                color: #777777;
+            }
+
+            #search_form_settings{
+                font-size: 11pt;
+                text-align: left;
+                background-color: #f3f3f3;
+                border: 1px solid #CCCCCC;
+                border-radius: 10px 10px 10px 10px;
+                box-shadow: 0 1px 0 #FFFFFF;
+                color: #555555;
+                margin: 20px auto;
+                padding: 10px 15px;
+                width: 800px;
+            }
+
+                #s_opt_title{
+                    font-size: 16pt;
+                    color: #777777;
+                }
+
+                #sort{
+                    margin-left: 15px;
+                    font-size: 11pt;
+                }
+
+                #order{
+                    margin-left: 15px;
+                    font-size: 11pt;
+                }
+
+
+
+        #page_content .repo_info{
+            background-color: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 0 1px 0 #FFFFFF;
+            color: #555555;
+            margin: 20px auto;
+            padding: 10px 15px;
+            width: 800px;
+        }
+            #page_content .repo_info a{
+                text-decoration: none;
+                color: #4183c4;
+                font-size: 14pt;
+
+            }
+
+            #page_content .repo_info .repo_name{
+                width: 350px;
+                float: left;
+            }
+
+            .owner{
+                width: 300px;
+                float: left;
+            }
+
+            #page_content .repo_info .like_box{
+                width: 123px;
+                float: left;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+
+                .likes{
+                    border: 1px solid #009BAE;
+                    display: inline-block;
+                    text-shadow: 0 1px #9caafc;
+                    text-align: center;
+                    background-position: center top;
+                    background-repeat: repeat-x;
+                    border-radius: 5px 5px 5px 5px;
+                    box-shadow: 0 1px 2px #C8C8C8;
+                    font-size: 10pt;
+                    padding:3px 7px;
+                    width: 110px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+
+                .like{
+                    background-color: #46BDF4;
+                    color: #f5f5ff;
+
+                }
+
+                .unlike{
+                    background-color: #bababa;
+                    color: #ffffff;
+                }
+
+                #page_content .repo_info .like_box span{
+                    margin-top: 5px;
+                    color: #BBBBBB;
+                    font-size: 7pt;
+                    float: left;
+                }
+
+            #page_content .repo_info .search_repo_titles{
+                font-size: 10pt;
+                color: #bbbbbb;
+            }
+
+            #page_content .repo_info .repo_add_info{
+                padding-top: 5px;
+                border-top: 1px solid lightgray;
+                margin-top: 10px;
+                float: left;
+                width: 780px;
+            }
+
+            #page_content .repo_info .repo_add_info span {
+                font-size: 10pt;
+                color: grey;
+            }
+
+            #page_content .repo_info .repo_add_info span a{
+                font-size: 10pt;
+            }
+
+
+.user_info_box{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 1px 0 #FFFFFF;
+    color: #555555;
+    margin: 20px auto;
+    padding: 10px 15px;
+    width: 800px;
+}
+    .user_info_box a{
+        text-decoration: none;
+        color: #4183C4;
+        font-size: 14pt;
+    }
+
+    .user_name{
+        width: 180px;
+        margin-left: 20px;
+        margin-top: 20px;
+        float: left;
+        font-size: 10pt;
+        color: #BBBBBB;
+    }
+
+    .github_page{
+        width: 350px;
+        margin-left: 20px;
+        margin-top: 20px;
+        float: left;
+        font-size: 10pt;
+        color: #BBBBBB;
+    }
+
+    .github_page a{
+        font-size: 10pt;
+    }
+
+    .user_like_box{
+        margin-top: 15px;
+        width: 130px;
+        float: left;
+    }
+
+    .user_like_box span{
+        color: #BBBBBB;
+        float: left;
+        font-size: 7pt;
+        margin-top: 5px;
+    }
+
+    .yii_logo{
+        margin: 30px auto;
+        width: 770px;
+        height: 220px;
+    }
+
+    .proj_logo{
+        width: 90px;
+        height: 90px;
+        margin: 20px auto;
+    }
+
+    .like_span{
+        font-size: 7pt;
+        color: #BBBBBB;
+        margin-top: 5px;
+    }
+
+    #repo_info_box{
+        width: 600px;
+        color: #777777;
+        font-size: 12pt;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+
+    .logo_wrapper{
+        padding: 5px 5px 5px 5px;
+        height:90px;
+        width:90px;
+        background-color: #eaeaea;
+        float: left;
+    }
+
+    .user_logo{
+        height:90px;
+        width:90px;
+        background-size: 100%;
+    }
+    .user_details{
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 1px 0 #FFFFFF;
+        color: #555555;
+        margin: 20px auto;
+        padding: 10px 15px;
+        width: 800px;
+    }
+    .left_part{
+        width: 300px;
+        float: left;
+        border-right: 1px solid lightgray;
+    }
+
+    .right_part{
+        width: 480px;
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 70px;
+        float: left;
+        font-size: 12pt;
+    }
+
+    .right_part .info_title{
+        color: #BBBBBB;
+        font-size: 12pt;
+    }
+    .repo_desc{
+        margin: 15px auto;
+    }
+
+    .user_details .like_btn{
+        text-align: center;
+        margin: 0 auto;
+        width: 160px;
+    }
+    .user_details span{
+        color: #BBBBBB;
+        font-size: 7pt;
+        margin-top: 5px;
+    }
+    .repo_desc{
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+#footer {
+    position: relative;
+    margin-top: -38px; /* negative value of footer height */
+    height: 36px;
+    clear: both;
+    background: url("/img/body-bg.jpg") repeat scroll 0 0 transparent;
+    border-top: 1px solid #BBBBBB;
+    box-shadow: 0 -4px 0 #FFFFFF;
+}
+
+    #copyright{
+        border: 0 none;
+        font-family: inherit;
+        font-size: 100%;
+        font-style: inherit;
+        font-weight: inherit;
+        outline: 0 none;
+        vertical-align: baseline;
+        color: #999999;
+        text-align: center;
+        margin-top: 7px;
+    }
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;/* thank you Erik J - negate effect of float*/
+}
+
+.clear{
+    clear: both;
+}
+

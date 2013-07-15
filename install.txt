@@ -1,0 +1,22 @@
+
+INSTALL INSTRUCTIONS:
+
+    1.  Create database gittest manualy.
+        Add MySQL user with PRIVILEGES to DB gittest.
+        Execute script gittest.sql ещ install MySQL database from dump.
+
+    2. Copy github.test directory content to your root web server directory. (Don't forget .htaccess file, sometime it is not visible for user, it's hidden one)
+
+    2. Open file /application/config/config.php and replace 'http://77.120.136.89':
+
+        $config['base_url']	= 'http://77.120.136.89';           //with your domain name like http://domain.name.com if there one or http://localhost if you install on local machine.
+
+       Open file /application/config/database.php and replace 'bd_name' and 'db_pass':
+
+        $db['default']['username'] = 'bd_name';                 //with your MySQL user name that has access to 'gittest' DB
+        $db['default']['password'] = 'db_pass';                 //with your MySQL user password
+
+       Open file /application/config/constants.php and replace 'github_user_name' and 'github_user_password'
+
+       define ('GITHUB_USER_NAME',                      'github_user_name');            //with your Github.com user name
+       define ('GITHUB_PASSWORD',                       'github_user_password');        //with your Github.com user password
